@@ -1,0 +1,6 @@
+div {
+    margin-bottom: 20px;
+  }
+  .correct, .incorrect {
+    text-transform: capitalize;
+  }
