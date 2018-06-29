@@ -108,6 +108,8 @@ $.fn.trivia = function() {
 };
 var Trivia;
 
+window.onload = function() {
+
 $("#start_button").click(function() {
     $(this).hide();
     $('.result').remove();
@@ -115,6 +117,7 @@ $("#start_button").click(function() {
     Trivia = new $(window).trivia();
     Trivia.ask();
 });
+}
 
 $('#choices_div').on('click', 'button', function(e) {
     var userPick = $(this).data("id"),
